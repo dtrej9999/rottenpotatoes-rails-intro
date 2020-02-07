@@ -4,7 +4,6 @@
   Include:
   - @all_ratings.each do |rating|
     = rating
-    #= check_box_tag "ratings[#{rating}]", '', ('checked' if @rate_param.include? rating)
     = check_box_tag "ratings[#{rating}]"
   = submit_tag 'Refresh'
 
