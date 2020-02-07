@@ -11,7 +11,7 @@ class MoviesController < ApplicationController
   end
 
   def index
-    @indexSort = params[:sort]
+    @indexSort = params[:indexSort]
     @movies = Movie.all.order(@indexSort)
   end
 
