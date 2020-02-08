@@ -18,6 +18,7 @@ class MoviesController < ApplicationController
     session[:indexSort] = @indexSort
     session[:ratings] = @rate_param
     @movies = Movie.where(rating: session[:ratings].keys).order(session[:indexSort])
+    
   end
 
   def new
